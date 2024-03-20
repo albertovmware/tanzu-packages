@@ -20,6 +20,8 @@ spec:
       apm:
         instrumentation:
           enabled: true
+      kubelet:
+        tlsVerify:  false
     providers:
       aks:
         enabled: true
@@ -28,5 +30,4 @@ spec:
       image:
         name: agent
         tag: 7.39.2
-    kubelet:
-      tlsVerify:  false
+
