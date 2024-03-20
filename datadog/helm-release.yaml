@@ -18,7 +18,7 @@ spec:
       enabled: false
       image:
         name: agent
-        tag: 7.51.0
+        tag: 7.45.1
     datadog:
       apiKey:  96aeeb498f7429c6b5ce34d446651b24
       appKey:  80523a36d0b7b5b8e3ab88f81a7927e50094cf2a
