@@ -28,7 +28,5 @@ spec:
       image:
         name: agent
         tag: 7.39.2
-    # datadog.kubelet.host -- Override kubelet IP
-    host:
     kubelet:
       tlsVerify:  false
