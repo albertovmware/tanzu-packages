@@ -1,0 +1,25 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: tmc-datadog
+  namespace: default
+spec:
+  interval: 1m
+  chart:
+    spec:
+      chart: datadog
+      sourceRef:
+        kind: HelmRepository
+        name: datadog
+        namespace: default
+      interval: 1m
+  values:
+    clusterChecksRunner:
+      enabled: false
+      image:
+        name: agent
+        tag: 7.51.0
+    datadog:
+      apiKey:  96aeeb498f7429c6b5ce34d446651b24
+      appKey:  80523a36d0b7b5b8e3ab88f81a7927e50094cf2a
+      site:  datadoghq.eu
