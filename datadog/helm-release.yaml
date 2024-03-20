@@ -15,9 +15,11 @@ spec:
       interval: 1m
   values:
     datadog:
-      apiKey:  96aeeb498f7429c6b5ce34d446651b24
-      appKey:  80523a36d0b7b5b8e3ab88f81a7927e50094cf2a
+      apiKey:  59400b67726d7debc83ee6fe8d9504af
       site:  datadoghq.eu
+      apm:
+        instrumentation:
+          enabled: true
     providers:
       aks:
         enabled: true
