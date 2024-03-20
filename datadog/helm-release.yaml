@@ -25,4 +25,4 @@ spec:
       enabled: true
       image:
         name: agent
-        tag: 7.45.1
+        tag: 7.39.2
